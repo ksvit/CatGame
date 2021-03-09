@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TermProject</title>
+        <meta charset="utf-8">
+        <script src="tp2.js" ></script>
+        <style>
+           
+            h2 {
+                font-family: Arial, Helvetica, sans-serif; 
+                color: orange;
+                margin-left: 300px;
+            }
+            h3 {
+                font-family: Arial, Helvetica, sans-serif;
+                color: orange;
+                text-align: left;
+                padding-left: 10px;
+            }
+            #score {
+                padding-left: 20px;
+            }
+            p {
+                padding-left: 10px;
+                color: darkslategrey;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body onload="setup()">
+        <h2>The Cat Game</h2> <br>
+        
+        <canvas id="myCanvas" style="border: 1px solid black" height="800" width="800" ></canvas>
+        <br>
+        <h3>Score: </h3>
+        <h3 id="score">0</h3>
+        <p>Use the arrow keys to move the orange cat to the fish, and the space bar to drop a mine</p> 
+        <p>Catch the star for an extra score boost for 10 seconds!</p>
+        <button onclick="reset()">Reset</button>
+    </body>
+</html>
